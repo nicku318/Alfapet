@@ -1,2 +1,3 @@
-# Alfapet
-Schoolproject
+# Alfapet i ADA95
+
+
