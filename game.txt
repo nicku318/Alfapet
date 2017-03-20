@@ -1,0 +1,37 @@
+<game_data total_players="2" board_dimensions="15" ... />
+<bricks>
+<brick title="A"	points="1"	amount="9"/>
+<brick title="B"	points="4"	amount="2"/>
+<brick title="C"	points="8"	amount="2"/>
+<brick title="D"	points="1"	amount="7"/>
+<brick title="E"	points="1"	amount="8"/>
+<brick title="F"	points="4"	amount="2"/>
+<brick title="G"	points="2"	amount="4"/>
+<brick title="H"	points="3"	amount="3"/>
+<brick title="I"	points="1"	amount="6"/>
+<brick title="J"	points="8"	amount="1"/>
+<brick title="K"	points="3"	amount="3"/>
+<brick title="L"	points="1"	amount="7"/>
+<brick title="M"	points="3"	amount="3"/>
+<brick title="N"	points="1"	amount="7"/>
+<brick title="O"	points="2"	amount="5"/>
+<brick title="P"	points="3"	amount="3"/>
+<brick title="Q"	points="10"	amount="1"/>
+<brick title="R"	points="1"	amount="9"/>
+<brick title="S"	points="1"	amount="8"/>
+<brick title="T"	points="1"	amount="7"/>
+<brick title="U"	points="3"	amount="3"/>
+<brick title="V"	points="4"	amount="2"/>
+<brick title="X"	points="10"	amount="1"/>
+<brick title="Y"	points="8"	amount="2"/>
+<brick title="Z"	points="10"	amount="1"/>
+<brick title="Å"	points="4"	amount="2"/>
+<brick title="Ä"	points="4"	amount="2"/>
+<brick title="Ö"	points="4"	amount="2"/>
+<brick title="_"	points="0"	amount="2"/>
+...
+</bricks>
+<bonuses>
+<bonus title="3x" multiplier="3" on_sentence="0" on_brick="1"/>
+...
+</bonus>
