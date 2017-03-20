@@ -1,3 +1,7 @@
+-- Här kommer meta-datan till spelet finnas.
+-- Det blir lättare om vi har dessa i en separat fil som man senare läser in.
+-- Har endast lagt till några grundläggande delar som kan fyllas på senare.
+
 <game_data total_players="2" board_dimensions="15" ... />
 <bricks>
 <brick title="A"	points="1"	amount="9"/>
