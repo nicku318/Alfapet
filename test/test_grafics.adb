@@ -17,7 +17,7 @@ with TJa.Window.Text;                   use TJa.Window.Text;
 with TJa.Window.Graphic;                use TJa.Window.Graphic;
 
 
-procedure Sand_Box is 
+procedure test_grafics is 
    Dim: constant Integer:= 15;
    Border_With: constant Integer:= 15;
    procedure Put_S(Amount: in Integer; S: string) is 
@@ -128,4 +128,4 @@ procedure Sand_Box is
    
 begin
    Test_Keyboard;
-end Sand_Box;
+end test_grafics;
