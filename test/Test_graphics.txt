@@ -1,0 +1,17 @@
+# Förslag på kontroller:
+Q     = Går till brädan.
+E     = Går till brickhållaren.
+C     = Går till chatten.
+Space = Markerar/Släpper bricka. (En bricka som lagts ner på brädan samma omgång och därefter markeras kommer återgå till brickhållaren).
+WASD  = Går ett steg till respektive väderiktning.
+IJKL  = Som WAS fast går 4 steg för snabbare rörelse.
+ESC   = Avslutar programmet.
+-- 
+# Förslag till GUI: 
+> Layouten som jag skapade med chatten på högersida och poäng/namn osv på höger-topp.
+> Färger och finslipning sker när spelet fungerar med befintlig layout.
+> Chatten skapas sist av allt.
+--
+# Övriga tankar
+> Chatten bör vara begränsat till 20 tecken per rad varav max 5 rader visas.
+> En flashig startscreen där man kan göra inställningar till spelet (olika spellägen osv)
