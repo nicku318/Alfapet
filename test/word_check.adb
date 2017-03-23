@@ -9,10 +9,19 @@ procedure Word_Check(Board : in Board_Type; Bricks : in Brick_Array; Words : out
 	    Krock := Krock + 1;
 	    Lenght := Lenght + 1;
 	 end loop;
-	 
+      else
+	 while Borad(Start.Horisontal)(Start.Vertikal  + Krock) /= "null" loop
+	    Word(Lenght) := Board.Kordinates(Start.Horisontal, Start.Vertikal + Krock);
+	    Krock := Krock + 1;
+	    Lenght := Lenght + 1;
+	 end loop;
+      end if;
+      
    end Get_Word;
    
------------------------------------ board_type is array	(horisontal)(veritkal) --------------------------------			   
+   ----------------------------------- board_type is array	(horisontal)(veritkal) --------------------------------	
+   
+   ---------------------------------- alla kordinater måste ändras så att de machar hur board_typen är definerad då jag lyckades skriva lite olika på olika ställen-------------------------------------
    I, length : Natural := 1;
    Horisotal : Boolean;
    Start : Kordinate_Type;
@@ -26,8 +35,8 @@ begin
    I := I + 1;
    for Q in 1..(Word(1).Lenght) loop
       if Horisontal then
-	 if Brick(Q).Vertikal + 1 /= "null" or Bricka(Q).Vertikal - 1 /= "null" then 
-	    while Board(Bricka.Vertikal + Length)(Horisontal) /= "null" loop
+	 if Board(Brick(Q).Kordinates.Vertikal + 1 /= "null" or Bricka(Q).Vertikal - 1 /= "null" then 
+	    while Board(Horisontal)(Bricka(Q).Vertikal + Length) /= "null" loop
 	       Lenght := Lenght + 1;
 	    end loop;
 	    Start := (Bricka(Q).Horisontal, Bricka(Q).Vertikal + Lenght);
