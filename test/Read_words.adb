@@ -32,7 +32,11 @@ procedure Read_words is
       Close(File);
    end Read_File;   
    
-   -- Söker en array med ord med värsta falls komplexitet: O(log n)
+   -- Söker en array med ord med värsta falls komplexitet: O(log n) dvs jävligt snabbt! 
+   -- Skapa en funktion som använder denna för att verifera om ord finns med, typ: 
+   -- function Looup_up(Words: in Words_array; Target: in unbounded_string)
+   -- begin
+   -- Binary_Search(Words,Words'first,Words'Length,Target)...
    function Binary_Search(Words: in Words_Array; Lower, Upper: in Natural; Target: in Unbounded_String) return Boolean is
       Mid: Integer:= Integer(Float(Lower)+Float(Upper-Lower)/2.0);
    begin 
