@@ -1,3 +1,57 @@
--- Här kommer planneringen till spelet vara
+type Brick_meta_data_record is 
+	Title: Character;
+	Points: integer;
+	Amount: integer;
 
-...
+Brick_record
+	Title: Character; //  Nullbricka = mellanslag
+	Points: integer;
+	Marked: Boolean;
+	Bonus: Integer; // Om >0   2..3 = brickan 12-13= Hela meningen
+
+Spelets laddar in data: 
+	Brickorna med antalet för respektive bricka
+
+	Loop där lägger in antalet brickor av respektive bricka
+	A: 5
+
+All_bricks: Länkad lista
+	A: Brick_record
+
+	Rader Koloumner
+Borad: array(1..15,1..15) of brick_record;
+	
+Anslutning: 
+	> Skriv in ditt namn
+	> Skriv in antalet spelare
+	# Får ID och brickor
+När x-antal spelare har anslutit
+	Börja spelet
+		Spelet börjar med att servern lägger ut en random bricka.
+	Slumpa ut vem som ska börja
+		> Byta brickor CHANGE 
+			> Markera och klicka B för att byta.
+			> Skickar x antal brickor till server och får tillbaka x nya
+		> Lägga brickor PUT  
+			> Lägger ut x antal brickor 
+			> Klickar enter för att göra draget
+			> Skickar brädan
+				> Kontrollera orden (Räkna poäng)
+					> Om det inte är ett giltigt ord baserat ordlistan 
+					> Baserat på brickorna användaren placerade den rundan
+					> Låt användaren göra om sitt drag.
+				> Annars 
+					> Skicka ut nya brädan och poäng 
+					> Till spelare ges x nya brickor
+					> Nästa spelares tur. 
+		> Pass 	PASS
+			Klicka på P
+		> Feldrag Wrong_move
+			
+	
+	
+Ordet feafea gav x poäng
+
+>> Alex: 
+	Fixar så den läser in alla brickor i en array "all bricks" 
+	En procedure för att lägga till och hämta en bricka
